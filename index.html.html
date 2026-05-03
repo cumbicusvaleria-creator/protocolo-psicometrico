@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo Psicométrico Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+        
+        :root {
+            --sage: #4A6767;
+            --cream: #F9F7F2;
+            --terracotta: #D4A373;
+            --dark-sage: #2C3E3E;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--cream);
+            color: var(--dark-sage);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+        /* Efecto Parallax 3D Mejorado */
+        .parallax-wrapper { perspective: 1500px; }
+        .main-3d-img {
+            transform-style: preserve-3d;
+            will-change: transform;
+            transition: transform 0.2s ease-out;
+            border-radius: 2rem;
+            box-shadow: 0 40px 80px -15px rgba(0,0,0,0.2);
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(74, 103, 103, 0.05);
+            border: 1px solid rgba(74, 103, 103, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .info-card:hover { transform: translateY(-5px); }
+
+        .accent-line {
+            width: 50px;
+            height: 3px;
+            background: var(--terracotta);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col items-center justify-center pt-20 px-6 parallax-wrapper">
+        <div class="text-center mb-12" data-aos="fade-down">
+            <h1 class="text-5xl md:text-7xl text-[#4A6767] mb-4">Utilidad y Consideraciones</h1>
+            <p class="text-[#D4A373] italic text-xl">Protocolo para la Aplicación de Reactivos Psicológicos</p>
+        </div>
+
+        <!-- Imagen Principal con Movimiento 3D -->
+        <div class="max-w-4xl w-full mb-16" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop" 
+                 alt="Concepto Psicología" 
+                 id="parallaxArt"
+                 class="main-3d-img w-full h-[500px] object-cover">
+        </div>
+
+        <!-- 1. ¿Qué es? -->
+        <div class="max-w-3xl bg-white/50 backdrop-blur-md p-10 rounded-3xl border border-white text-center" data-aos="fade-up">
+            <h2 class="text-3xl text-[#4A6767] mb-6">1. ¿Qué es un reactivo psicológico?</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Es un instrumento o prueba estandarizada diseñada para medir variables como <b>inteligencia, personalidad, emociones, habilidades cognitivas o conductas</b>. Se fundamenta en principios psicométricos que garantizan su validez y confiabilidad.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-6xl px-6 py-24">
+
+        <!-- 2. Utilidad -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-16">
+                <h2 class="text-4xl text-[#4A6767]">2. Utilidad de los Reactivos</h2>
+                <div class="h-[1px] flex-grow bg-[#D4A373]/30"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- a) Evaluación objetiva -->
+                <div class="info-card" data-aos="fade-up">
+                    <div class="accent-line"></div>
+                    <h4 class="font-bold text-xl mb-3">a) Evaluación objetiva</h4>
+                    <p class="text-sm text-gray-500">Permiten medir características de forma estructurada y cuantificable, reduciendo la subjetividad del evaluador.</p>
+                </div>
+                <!-- b) Diagnóstico clínico -->
+                <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accent-line"></div>
+                    <h4 class="font-bold text-xl mb-3">b) Diagnóstico clínico</h4>
+                    <p class="text-sm text-gray-500">Fundamentales en la identificación de trastornos mentales según manuales como el <b>DSM-5</b> y la <b>CIE-11</b>.</p>
+                </div>
+                <!-- c) Toma de decisiones -->
+                <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accent-line"></div>
+                    <h4 class="font-bold text-xl mb-3">c) Toma de decisiones</h4>
+                    <ul class="text-xs text-gray-600 space-y-2 mt-4">
+                        <li>• <b>Clínico:</b> Diagnóstico y tratamiento.</li>
+                        <li>• <b>Educativo:</b> Dificultades de aprendizaje.</li>
+                        <li>• <b>Organizacional:</b> Selección de personal.</li>
+                    </ul>
+                </div>
+                <!-- d) Seguimiento -->
+                <div class="info-card" data-aos="fade-up">
+                    <div class="accent-line"></div>
+                    <h4 class="font-bold text-xl mb-3">d) Seguimiento</h4>
+                    <p class="text-sm text-gray-500">Miden la evolución del paciente antes, durante y después de una intervención.</p>
+                </div>
+                <!-- e) Investigación -->
+                <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accent-line"></div>
+                    <h4 class="font-bold text-xl mb-3">e) Investigación</h4>
+                    <p class="text-sm text-gray-500">Herramientas clave para recolectar datos en estudios científicos.</p>
+                </div>
+                <!-- Imagen decorativa 1 -->
+                <div class="rounded-[24px] overflow-hidden shadow-lg" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Consideraciones Previas -->
+        <section class="mb-32">
+            <h2 class="text-4xl text-[#4A6767] mb-16 text-center" data-aos="fade-up">3. Consideraciones Previas a la Aplicación</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <!-- a) Objetivo -->
+                    <div class="flex gap-6" data-aos="fade-right">
+                        <div class="text-3xl text-[#D4A373]"><i class="fas fa-bullseye"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">a) Objetivo de la evaluación</h4>
+                            <p class="text-sm text-gray-500 italic">"Aplicar un test sin objetivo claro genera resultados poco útiles o erróneos".</p>
+                        </div>
+                    </div>
+                    <!-- b) Selección -->
+                    <div class="flex gap-6" data-aos="fade-right" data-aos-delay="100">
+                        <div class="text-3xl text-[#D4A373]"><i class="fas fa-tasks"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">b) Selección adecuada</h4>
+                            <p class="text-sm text-gray-500">Cumplimiento de <b>Validez</b>, <b>Confiabilidad</b> y <b>Normas</b> adaptadas.</p>
+                        </div>
+                    </div>
+                    <!-- c) Características -->
+                    <div class="flex gap-6" data-aos="fade-right" data-aos-delay="200">
+                        <div class="text-3xl text-[#D4A373]"><i class="fas fa-user-friends"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">c) Características del evaluado</h4>
+                            <p class="text-sm text-gray-500">Considerar edad, nivel educativo, cultura y condiciones emocionales/físicas.</p>
+                        </div>
+                    </div>
+                    <!-- d) Condiciones -->
+                    <div class="flex gap-6" data-aos="fade-right" data-aos-delay="300">
+                        <div class="text-3xl text-[#D4A373]"><i class="fas fa-leaf"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">d) Condiciones de aplicación</h4>
+                            <p class="text-sm text-gray-500">Ambiente tranquilo, sin distractores e instrucciones claras.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- e) Competencia -->
+                    <div class="bg-white p-8 rounded-3xl border border-[#4A6767]/10" data-aos="fade-left">
+                        <h4 class="font-bold text-lg mb-2">e) Competencia del evaluador</h4>
+                        <p class="text-xs text-gray-500">Capacitación en aplicación, corrección e interpretación ética.</p>
+                    </div>
+                    <!-- f) Consentimiento -->
+                    <div class="bg-white p-8 rounded-3xl border border-[#4A6767]/10" data-aos="fade-left" data-aos-delay="100">
+                        <h4 class="font-bold text-lg mb-2">f) Consentimiento informado</h4>
+                        <p class="text-xs text-gray-500">Informar sobre objetivos, uso de resultados y confidencialidad.</p>
+                    </div>
+                    <!-- g) Consideraciones éticas -->
+                    <div class="bg-[#4A6767] text-white p-8 rounded-3xl" data-aos="fade-left" data-aos-delay="200">
+                        <h4 class="font-bold text-lg mb-4 text-[#D4A373]">g) Ética (Principios APA)</h4>
+                        <ul class="grid grid-cols-2 gap-2 text-[10px] uppercase tracking-wider">
+                            <li>• Uso responsable</li>
+                            <li>• Confidencialidad</li>
+                            <li>• No causar daño</li>
+                            <li>• Interpretación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imagen decorativa 2 - Ambiente clínico -->
+        <div class="w-full h-80 rounded-[40px] overflow-hidden mb-32" data-aos="zoom-in">
+            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover">
+        </div>
+
+        <!-- 4. Errores Comunes -->
+        <section class="bg-[#D4A373]/10 p-12 rounded-[40px] border-2 border-dashed border-[#D4A373]/30 mb-32">
+            <h2 class="text-3xl text-[#4A6767] mb-12 text-center" data-aos="fade-up">4. Errores Comunes a Evitar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-center gap-3 bg-white p-6 rounded-2xl" data-aos="flip-up">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <p class="text-sm font-bold">Aplicar sin formación</p>
+                </div>
+                <div class="flex items-center gap-3 bg-white p-6 rounded-2xl" data-aos="flip-up" data-aos-delay="100">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <p class="text-sm font-bold">Instrumentos no validados</p>
+                </div>
+                <div class="flex items-center gap-3 bg-white p-6 rounded-2xl" data-aos="flip-up" data-aos-delay="200">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <p class="text-sm font-bold">Ignorar contexto cultural</p>
+                </div>
+                <div class="flex items-center gap-3 bg-white p-6 rounded-2xl" data-aos="flip-up" data-aos-delay="300">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <p class="text-sm font-bold">Interpretación aislada</p>
+                </div>
+                <div class="flex items-center gap-3 bg-white p-6 rounded-2xl" data-aos="flip-up" data-aos-delay="400">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <p class="text-sm font-bold">Sobregeneralizar</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-24 text-center bg-white border-t border-[#4A6767]/10">
+        <div class="max-w-3xl mx-auto px-6">
+            <p class="text-2xl text-[#4A6767] font-serif italic mb-8">
+                "No basta con aplicar un test: es necesario interpretarlo críticamente dentro del contexto del individuo."
+            </p>
+            <p class="text-xs text-gray-400 uppercase tracking-widest">© 2026 Guía de Evaluación Psicométrica • Ética y Ciencia</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: false });
+
+        // Efecto 3D Scroll
+        const art = document.getElementById('parallaxArt');
+        window.addEventListener('scroll', () => {
+            const scroll = window.scrollY;
+            const rotation = scroll * 0.05; 
+            const moveY = scroll * 0.1;
+            
+            art.style.transform = `translateY(${moveY}px) rotateX(${rotation * 0.1}deg) rotateY(${rotation * 0.05}deg)`;
+        });
+    </script>
+</body>
+</html>
